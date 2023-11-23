@@ -10,6 +10,7 @@ import Foundation
 class APIConstants {
     static let moviePosterBaseUrl = "https://image.tmdb.org/t/p/w500"
     static let movieBaseUrl = "https://api.themoviedb.org/3"
+    static let apiKey = "38e61227f85671163c275f9bd95a8803"
 }
 
 enum Endpoint:String {
@@ -30,12 +31,4 @@ enum APIError : Error {
 }
 
 
-enum RetryParamValue : Int {
-    case minimumRetryCount = 3
-    case noRetry = 0
-}
 
-enum Method : String {
-    case GET
-    case POST
-}
